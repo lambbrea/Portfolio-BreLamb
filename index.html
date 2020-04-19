@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bre Lamb Portfolio</title>
+  <meta name="keywords" content="design, portfolio, programmer">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/2c21a4a528.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro|Work+Sans&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<script>
+  function openSlideMenu(){
+    document.getElementById('menu').style.width = '250px';
+    document.getElementById('content').style.marginLeft = '250px';
+  }
+  function closeSlideMenu(){
+    document.getElementById('menu').style.width = '0';
+    document.getElementById('content').style.marginLeft = '0';
+  }
+</script>
+<style>
+  /* SIDNAV STYLES */
+  body {
+	font-family: 'Work Sans', sans-serif;
+	overflow-x: hidden;
+}
+.nav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #D7AB98;
+	opacity: .9;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.7s;
+}
+.nav a {
+	display: block;
+	padding: 20px 30px;
+	font-size: 25px;
+	text-decoration: none;
+	color:#FFF;
+}
+
+#bars{
+  display: block;
+	padding: 20px 30px;
+	font-size: 25px;
+	text-decoration: none;
+	color: black;
+}
+
+.nav a:hover {
+	color: black;
+	transition: 0.4s;
+}
+.nav .close {
+	position: absolute;
+	top: 0;
+	right: 22px;
+	margin-left: 50px;
+	font-size: 30px
+}
+.slide a {
+	background-color: #FFF;
+	font-size: 36px;
+}
+#content {
+	padding: 20px;
+	transition: margin-left 0.7s;
+	overflow: hidden;
+	width: 100%;
+}
+  /* END OF SIDENAV STYLES */
+
+  /* TYPING TEXT STYLES*/
+  .text-box{
+    height: 180px;
+  }
+  .typing-text{
+    margin-top: 150px;
+    margin-left: 410px;
+    animation:type 4s steps(32);
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: consolas;
+    border-right: 4px solid black;
+    width: 32ch;
+    font-size:45px;
+  }
+  @keyframes type{
+      0%{
+          width:0ch;
+      }
+      100%{
+          width:32ch;
+      }
+  }
+  /* END OF TYPING TEXT STYLES*/
+
+  /* TWO COLUMN STYLES */
+  .header-text{
+      font-family: 'Work Sans', sans-serif;
+      color: #D7AB98;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+  }
+
+  .para-text{
+      font-family:'Work Sans', sans-serif;
+      font-size: 18px;
+      text-align: center;
+      line-height: 35px;
+      list-style: none;
+  }
+
+  .line-break{
+    height:150px;
+  }
+  /* END OF TWO COLUMN STYLES */
+
+  /* CONTACT STYLES*/
+  #contact-box{
+      height: 400px;
+      background-color: #FFF;
+      text-align: center;
+      font-family: 'Work Sans', sans-serif;
+  }
+
+  .contact-heading{ 
+      color: #D7AB98;
+      font-size: 40px;
+      font-weight: bold;
+  }
+
+  .contact-para{
+      font-size:20px;
+      margin-left: 250px;
+      margin-right: 250px;
+  }
+
+  .contact-button{
+      background-color: #D7AB98;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      border: none;
+      display: inline-block;
+      height: 40px;
+      width: 200px;
+  }
+
+
+  .contact-button:hover {
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  /* CONTACT STYLES */
+
+  /* FOOTER STYLES  */
+footer{
+  width: 100%;
+  background-color: #FFF;
+  padding: 3%;
+  color: black;
+}
+
+.fa{
+   padding: 15px;
+   font-size: 25px;
+   color: #FFF;
+}
+
+.fa:hover{
+  color: #D5D5D5;
+  text-decoration: none;
+}
+
+a:visited{
+    color: #FFF;
+}
+  /* END OF FOOTER STYLES  */
+
+  /* MEDIA STYLES */
+  @media (max-width: 900px){
+    .fa{
+      font-size: 20px;
+      padding: 10px;
+    }
+    #type-txt{
+        margin-left:100px;
+    }
+  }
+  @media (max-width: 600px ){
+    #icon{
+      max-width: 150px;
+    }
+    h2 {
+      font-size: 1.7em;
+    }
+    #type-txt{
+        margin-left: 65px;
+        font-size: 23px;
+    }
+
+    .text-box{
+        height: 150px;
+    }
+
+    .contact-para{
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 12px;
+    }
+  }
+  /* END OF MEDIA STYLES */
+</style>
+</head>
+<body>
+
+  <div id="content">
+    <!-- SIDEBAR NAV -->
+    <span class="slide">
+      <a id="bars" href=" #" onclick="openSlideMenu()">
+        <i class="fas fa-bars"></i>
+    </a>
+    </span>
+    <div id="menu" class="nav">
+      <a href="#" onclick="closeSlideMenu()">
+        <i class="far fa-times-circle"></i>
+      </a>
+      <a href="./index.html">About</a>
+      <a href="./projects.html">Projects</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+    <!-- END OF SIDEBAR NAV -->
+    <!-- TYPING TEXT -->
+  <div class="text-box" >
+    <h1 class="typing-text" id="type-txt">Bre Lamb: Designer & Programmer.</h1>
+  </div>
+    <!-- TYPING TEXT -->
+    <!-- IMAGE SECTION -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <img src="./Img/3-column-image.jpeg" alt="three skills image" class="img-responsive">
+      </div>
+    </div>
+  </div>
+  <div class="line-break"></div>
+    <!-- IMAGE SECTION -->
+    <!-- 2 COLOUMN SECTION -->
+<div class="container">
+  <div class="row">
+     <div class="col-md-6">
+       <h4 class="header-text">&#91; Website Developer &#93;</h4>
+       <p class="para-text">Creating clean, readable, code using HTML, CSS, and Bootstrap. Creating desktop and mobile friendly websites. Using wireframing to help establish a stong blueprint of a website before actually coding it out.</p>
+       <p class="para-text"> If your interested in working with me on creating a website, we can work on creating something inspiring. The process will start with wireframing, which is where we will design the layout of the website, before actually doing the coding part. Next, once the wireframing is done, we will double check that everything is how you want it to look. Then the coding process will begin. Please message me using the contact link at the bottom of the page, to get started on your website today! 
+       </p>
+     </div>
+     <div class="col-md-6">
+      <h4 class="header-text">&#91; Graphic Designer &#93;</h4>
+      <p class="para-text">If your looking for a new look, or update, I am more than excited to work with you to create inspiring Graphic Design Projects..... 
+      </p>
+      <ul class="para-text">
+          <li>Business Cards</li>
+          <li>Lables</li>
+          <li>Flyer</li>
+          <li>Social Media Posts</li>
+          <li>Email Design/Formats</li>
+          <li>And Much More</li>
+      </ul>
+      <p class="para-text"> Please contact me through the contact button at the bottom of the page. I look forward to working with you!
+      </p>
+    </div>
+  </div>
+</div>
+    <!-- END OF 2 COLOUMN SECTION -->   
+    <!-- Contact Form-->
+<div class="container col-sm-12" id="contact-box">
+  <br>
+  <br>
+  <h1 class="contact-heading">Are you ready to connect?</h1>
+  <h2>I'm available now for freelance work.</h2>
+  <br>
+  <p class="contact-para">Whether you have a project in mind, need a fresh new look for any of your business needs, just hit the button below to get in touch. Let's create something inspiring!</p>
+  <br>
+  <button class="contact-button">
+    <a href="mailto:lambbreezy17@gmail.com" style="color:white; font-weight: bold; font-family:'Maven Pro', sans-serif; font-size:20px;">Send Message</a>
+</button>
+</div>
+    <!-- Contact Form -->
+    <!-- FOOTER-->
+<footer class="container-fluid text-center">
+  <div class="row">
+    <div class="col-sm-4">
+      <br>
+      <h3>Drop A Message</h3>
+      <a href="mailto: lambbreezy17@gmail.com"><i class="far fa-envelope" style="color:black; font-size:28px;"></i></a>
+    </div>
+    <div class="col-sm-4">
+      <br>
+      <h3>Let's Connect</h3>
+      <a href="https://www.facebook.com/bre.lamb.71" target="_blank" ><i class="fab fa-facebook-square" style="color:black; font-size:28px;"></i></a> 
+      <a href="https://www.instagram.com/bre.designs_/?hl=en" target="_blank"><i class="fab fa-instagram" style="color:black; font-size:28px;"></i></a>
+    </div>
+    <div class="col-sm-4">
+      <br>
+      <br>
+      <br>
+     <p>&copy; Copyright 2020, Bre Lamb Portfolio</p>
+    </div>
+  </div>
+</footer>
+    <!-- END OF FOOTER -->
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
